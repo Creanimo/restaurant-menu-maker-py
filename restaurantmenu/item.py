@@ -1,7 +1,7 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 from restaurantmenu import ingredient
-from restaurantmenu import allergen_map
+from restaurantmenu import substance_map
 
 @dataclass
 class Item:
@@ -15,5 +15,5 @@ class Item:
         allergens = set()
         for ing in self.base_variations + self.ingredients:
             if ing is not None:
-                allergens.update(allergen_map.get_allergens(ing))
+                allergens.update(substance_map.get_allergens(ing))
         return allergens
