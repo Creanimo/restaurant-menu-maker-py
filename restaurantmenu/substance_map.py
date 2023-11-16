@@ -33,7 +33,7 @@ class SubstanceMap:
     # A method that prints the mapping in a human-readable format
     def print_map(self) -> None:
         for ingredient, substances in self.ingredient_to_substance.items():
-            print(f"{ingredient.name} contains:")
+            print(f"{ingredient.names[0]} contains:")
             for subst in substances:
                 # Check the type of the substance object and print accordingly
                 if isinstance(subst, substance.Allergen):

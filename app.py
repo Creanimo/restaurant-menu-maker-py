@@ -1,9 +1,9 @@
 from restaurantmenu import item, ingredient, substance, substance_map
 
-zutat_schmand = ingredient.Ingredient("Schmand")
+zutat_schmand = ingredient.Ingredient(["Schmand"])
 
-zutat_erdnusssahnesosse = ingredient.Ingredient("Erdnusssoße")
-zutat_ketchup = ingredient.Ingredient("Ketchup")
+zutat_erdnusssahnesosse = ingredient.Ingredient(["Erdnusssoße"])
+zutat_ketchup = ingredient.Ingredient(["Ketchup"])
 
 allergen_milch = substance.Allergen("Milch", "🐮")
 allergen_erdnuss = substance.Allergen("Erdnuss", "🥜")
